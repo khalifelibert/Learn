@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Fle">
+            <MenuFlyoutItem Text="Imprime"/>
+            <MenuFlyoutItem Text="Save" Clicked="Sv"/>
+            
+        </MenuBarItem>
+
+        <MenuBarItem Text="Zoom">
+            <MenuFlyoutItem Text="+"/>
+            <MenuFlyoutItem Text="-"/>
+
+        </MenuBarItem>
+
+        <MenuBarItem Text="Elles">
+            <MenuFlyoutSubItem Text="Ydé">
+                <MenuFlyoutItem Text="Lix"/>
+                <MenuFlyoutItem Text="Lox"/>
+                <MenuFlyoutItem Text="New"/>
+            </MenuFlyoutSubItem>
+
+            <MenuFlyoutSubItem Text="Dle">
+                <MenuFlyoutItem Text="Inc"/>
+                <MenuFlyoutItem Text="Fix"/>
+            </MenuFlyoutSubItem>
+            
+        </MenuBarItem>
+
+        <MenuBarItem Text="Help">
+            <MenuFlyoutItem Text="View Help"/>
+            <MenuFlyoutItem Text="Send"/>
+
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+    
+    
+    
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height=".5*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="dotnet_bot" Background="PowderBlue"
+               Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Editor Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"
+               Placeholder="Entrer lol"/>
+        <Button Grid.Row="2" Grid.Column="0" Text="Save" />
+        <Button Grid.Row="2" Grid.Column="1" Text="Los" />
+        <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" 
+               Text="F*ck" FontSize="Large"/>
+
+    </Grid>
+        
+    
+        
+
+</ContentPage>
